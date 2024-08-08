@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const str = "hello world";
+const map = new Map();
+
+for (let i = 0; i < str.length; i++) {
+    if (str[i] !== ' ') {
+        map.set(str[i], (map.get(str[i]) || 0) + 1);
+    }
+}
+
+console.log(map.size);
+console.log(map);
+console.log(`${map.get('h')} ${map.get('e')} ${map.get('l')} ${map.get('o')} ${map.get('w')} ${map.get('r')} ${map.get('d')}`);
+
+    </script>
+</body>
+</html>
